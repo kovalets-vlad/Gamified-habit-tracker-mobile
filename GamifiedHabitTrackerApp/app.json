@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "gamified-habit-tracker-mobile",
-    "slug": "gamified-habit-tracker-mobile",
+    "name": "GamifiedHabitTrackerApp",
+    "slug": "GamifiedHabitTrackerApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,8 +20,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
