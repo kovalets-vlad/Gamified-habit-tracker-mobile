@@ -9,7 +9,7 @@ export default function MainScreen() {
     useEffect(() => {
         const fetchHabits = async () => {
             try {
-                const res = await api.get("/habits/user/");
+                const res = await api.get("/habits/user");
                 setHabits(res.data);
             } catch (e) {
                 setError("Помилка завантаження звичок");

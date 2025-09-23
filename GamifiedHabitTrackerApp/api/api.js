@@ -10,10 +10,11 @@ const api = axios.create({
 
 api.interceptors.request.use(async (config) => {
     const token = await AsyncStorage.getItem("token");
-    if (token) {
-        config.headers.Authorization = `Bearer ${token}`;
-    }
+    console.log("Sending token:", token);
+    config.headers.Authorization = token ? `Bearer ${token}` : "";
+    console.log("Request headers:", config.headers);
     return config;
 });
+
 
 export default api;
